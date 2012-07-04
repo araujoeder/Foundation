@@ -14,9 +14,9 @@
 	  ?>
   	 </div>
   	 
-  	 <div class="four columns">
+  	 <aside class="four columns">
          <?php get_sidebar(); ?>
-     </div>
+     </aside>
 </div>
 
 

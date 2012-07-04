@@ -2,8 +2,17 @@
 
 	<footer>
 		<div class="row">
-			<div class="twelve columns">
- 			
+							
+			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Widgets')) : ?>
+
+			<h2>Have no widgets,please login to put some widgets here.</h2>
+			
+			<?php endif; // end footer widget area ?>
+
+		</div>
+		<div class="row">		
+								
+ 			<div class="twelve columns">
     			<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<?php bloginfo( 'name' ); ?>
 				</a>

@@ -39,7 +39,7 @@
 
  <!-- Display the Post's Content in a div box. -->
  <div class="entry">
-   <?php the_content(); ?>
+   <?php the_excerpt(); ?>
  </div>
 
  <!-- Display a comma separated list of the Post's Categories. -->
