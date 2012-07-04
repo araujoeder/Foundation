@@ -1,17 +1,26 @@
 
+<!-- Begin Comments -->
+<div>
+	<?php /* Run some checks for bots and password protected posts */ ?>
+	<?php
+    $req = get_option('require_name_email'); // Checks if fields are required.
+    if ( 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']) )
+        die ( 'Please do not load this page directly. Thanks!' );
+    if ( ! empty($post->post_password) ) :
+        if ( $_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password ) :
+	?>
+                
+    <div class="alert-box warning nopassword"><?php _e('This post is password protected. Enter the password to view any comments.', 'Foundation') ?></div>
+            
+</div>
 
-			<div id="comments">
-<?php if ( post_password_required() ) : ?>
-				<p class="nopassword"><?php _e( 'This post is password protected. Enter the password to view any comments.', 'twentyten' ); ?></p>
-			</div><!-- #comments -->
 <?php
-		/* Stop the rest of comments.php from being processed,
-		 * but don't kill the script entirely -- we still have
-		 * to fully load the template.
-		 */
-		return;
-	endif;
+        return;
+    endif;
+endif;
 ?>
+<!-- End Comments -->
+
 
 <?php
 	// You can start editing here -- including this comment!

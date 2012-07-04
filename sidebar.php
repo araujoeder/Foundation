@@ -25,5 +25,5 @@
 					<?php wp_meta(); ?>
 				</ul>
 			</li>
-		<?php endif; // end primary widget area ?>
+<?php endif; // end primary widget area ?>
 

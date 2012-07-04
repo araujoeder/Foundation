@@ -10,6 +10,7 @@
             <p>Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post</p>  
 		<?php endif; ?>  
   
+  		<?php /*      the loop       */?>
 		<?php while ( have_posts() ) : the_post(); ?>  
   
 		<article class="post">  
@@ -32,13 +33,11 @@
   		  <div class="dots"></div>  
 		</article><!-- post -->  
   
-		
-  
+		 
 		<?php comments_template( '', true ); ?>  
   
 		<?php endwhile; ?>  
 	  
-		
 
 	</div>
 		
