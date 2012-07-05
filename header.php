@@ -95,18 +95,9 @@
 					    used. */
 						
 					    wp_nav_menu( array(
-						'theme_location' => 'primary',
-						
-						//'container' =>'ul',
-						//'container_class' => 'nav-bar'
+						'theme_location' => 'primary',										
 						'menu_class' => 'nav-bar',
 						
-						//'before' => '',
-						//'after' => '',
-						//'link_before' => '',
-						//'link_after' => '',
-						//'depth' => 0,
-						//'items_wrap' => '<dl class="nav hide-on-phones"><dt>Blog Menu:</dt>%3$s</dl>',
 						)
 					); ?>
 				</nav>

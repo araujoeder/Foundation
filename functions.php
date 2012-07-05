@@ -24,6 +24,8 @@ register_nav_menus( array(
   
     register_sidebar(array(  
     'name'=>'Right Widgets',  
+    'before_widget'=>'<div>',
+    'after_widget'=>'</div>',
 
     ));  
       
