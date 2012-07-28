@@ -17,3 +17,5 @@ readme.html
 license.txt
 
 .todo
+*.bak
+*.swp

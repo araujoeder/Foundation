@@ -29,12 +29,16 @@
 
 <?php wp_footer(); ?>
   <!-- Included JS Files -->
-  <script src="<?php echo get_template_directory_uri(); ?>/javascripts/jquery.min.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/javascripts/jquery.reveal.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/javascripts/jquery.orbit-1.4.0.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/javascripts/jquery.customforms.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/javascripts/jquery.placeholder.min.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/javascripts/jquery.tooltips.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/javascripts/jquery-1.7.2.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/javascripts/jquery.placeholder.js"></script>
+
+  <script src="<?php echo get_template_directory_uri(); ?>/javascripts/jquery.foundation.alerts.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/javascripts/jquery.foundation.accordion.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/javascripts/jquery.foundation.buttons.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/javascripts/jquery.foundation.tooltips.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/javascripts/jquery.foundation.forms.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/javascripts/jquery.foundation.tabs.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/javascripts/jquery.foundation.reveal.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/javascripts/app.js"></script>
 
 </body>
